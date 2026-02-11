@@ -1,73 +1,53 @@
 # 🛡️ DNS Degistirici v1.0
 
-<div align="center">
-  <img src="app-icon.svg" width="128" height="128" alt="DNS Degistirici Logo" />
-  <br/>
-  <br/>
-  
-  **Hızlı, Güvenli ve Modern DNS Değiştirme Aracı**
-  
-  [![Tauri](https://img.shields.io/badge/Tauri-v2-orange?style=flat-square&logo=tauri)](https://tauri.app)
-  [![React](https://img.shields.io/badge/React-v18-blue?style=flat-square&logo=react)](https://reactjs.org)
-  [![Rust](https://img.shields.io/badge/Rust-Backend-black?style=flat-square&logo=rust)](https://www.rust-lang.org)
-  [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/version-v1.0.0-orange)](https://github.com/sc0x01/dns-degistirici/releases/tag/v1.0.0)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F72-brightgreen)](https://www.virustotal.com/)
+[![Download](https://img.shields.io/badge/İndir-DNS.Degistirici.exe-white)](https://github.com/sc0x01/dns-degistirici/releases/latest/download/DNS.Degistirici.exe)
 
-</div>
-
-## ✨ Özellikler
-
-*   **🚀 Hızlı Değişim:** Tek tıkla Cloudflare, Google, Quad9 ve OpenDNS arasında geçiş yapın.
-*   **🔒 Güvenlik Odaklı:** Yönetici izinlerini kontrol eder ve güvenli bir şekilde DNS ayarlarını uygular.
-*   **🎨 Modern Arayüz:** sc0x01 tasarım diline uygun, minimalist ve şık kullanıcı arayüzü.
-*   **tray Entegrasyonu:** Sistem tepsisinden (System Tray) arka planda çalışır, hızlı erişim sağlar.
-*   **⚡ Hafif:** Rust backend sayesinde minimum kaynak tüketimi ( < 5MB RAM).
-*   **Auto-Update:** (Planlanan) Otomatik güncelleme desteği.
-
-## 🛠️ Kurulum
-
-En son sürümü [Releases](https://github.com/sc0x01/dns-degistirici/releases) sayfasından indirebilirsiniz.
-
-**Kurulumsuz (Portable):** `.exe` dosyasını indirip direkt çalıştırın.
-**Kurulumlu (Setup):** `setup.exe` dosyasını indirip kurun.
-
-## 💻 Geliştirme (Development)
-
-Bu projeyi yerel ortamınızda geliştirmek için:
-
-1.  Repoyu klonlayın:
-    ```bash
-    git clone https://github.com/sc0x01/dns-degistirici.git
-    cd dns-degistirici
-    ```
-
-2.  Bağımlılıkları yükleyin:
-    ```bash
-    npm install
-    ```
-
-3.  Geliştirme modunda çalıştırın:
-    ```bash
-    npm run tauri dev
-    ```
-
-## 🏗️ Build (Derleme)
-
-Projenin `.exe` çıktısını almak için:
-
-```bash
-npm run tauri build
-```
-Derlenen dosyalar `src-tauri/target/release/bundle/nsis/` altında olacaktır.
-
-## 🤝 Katkıda Bulunma
-
-PR'lar (Pull Requests) kabul edilir. Büyük değişiklikler için önce bir Issue açarak tartışalım.
-
-## 📝 Lisans
-
-Bu proje [MIT](LICENSE) lisansı ile lisanslanmıştır.
+**[sc0x01.com](https://sc0x01.com)** tasarım felsefesiyle geliştirilmiş, minimalist, hızlı ve güvenli DNS değiştirme aracı. Gereksiz hiçbir detay içermez, sadece en hızlı ve güvenli internet deneyimini sunar.
 
 ---
-<div align="center">
-  Developed with ❤️ by <a href="https://github.com/sc0x01">sc0x01</a>
-</div>
+
+## 🚀 Temel Özellikler
+
+- **🔒 Hız ve Gizlilik:** Cloudflare, Google, Quad9 ve OpenDNS arasında tek tıkla geçiş yapın.
+- **🛡️ Güvenlik Odaklı:** Zararlı yazılımlardan (Quad9) veya uygunsuz içeriklerden (OpenDNS Aile) korunun.
+- **⚡ Arka Plan Çalışma (System Tray):** Uygulamayı kapatmadan sistem tepsisine (`Tray`) küçültebilir, sağ tık menüsünden anında DNS değiştirebilirsiniz.
+- **🔔 Anlık Bildirimler:** DNS değişimleri hakkında Windows bildirimleri ile anında haberdar olun.
+- **🤖 Otomatik (DHCP):** Tek tıkla orijinal sistem varsayılan ayarlarına geri dönün.
+- **🎨 Modern Arayüz:** Sade, şık ve kullanımı kolay arayüz.
+
+## 📸 Ekran Görüntüleri
+
+<p align="center">
+  <img src="screenshots/1.png" width="30%" alt="Ana Ekran" />
+  <img src="screenshots/2.png" width="30%" alt="Tepsi Menüsü" />
+  <img src="screenshots/3.png" width="30%" alt="Hakkında" />
+</p>
+
+## 🛠️ Teknik Altyapı
+
+- **Frontend:** React + TypeScript + Tailwind CSS (Yüksek performanslı UI)
+- **Backend:** Rust (Tauri v2) - Sistem kaynaklarını yormaz (< 10MB RAM)
+- **Güvenlik:** Windows `netsh` ve `powershell` komutlarını güvenli bir şekilde yönetir.
+
+## 📥 Kurulum ve Kullanım
+
+1. [Releases](https://github.com/sc0x01/dns-degistirici/releases) sayfasından en güncel `.exe` dosyasını indirin.
+2. İndirdiğiniz dosyayı çalıştırın (Yönetici izni gereklidir).
+3. İstediğiniz DNS sağlayıcısını seçin (örn: Cloudflare).
+4. **"Başarıyla Uygulandı"** bildirimini görünce işlem tamamdır!
+5. Uygulamayı kapattığınızda sistem tepsisinde arka planda çalışmaya devam eder.
+
+> **Not:** Windows DNS ayarlarını değiştirebilmek için uygulamanın **"Yönetici Olarak Çalıştırılması"** gerekir. Eğer yönetici değilseniz, uygulama sizi uyaracaktır.
+
+---
+
+## 🛡️ Güvenlik ve Gizlilik Notu
+
+Bu uygulama, internet bağlantı ayarlarınızı değiştirmek için standart Windows ağ komutlarını (`netsh`, `ipconfig`) kullanır. Hiçbir verinizi toplamaz, izlemez veya üçüncü taraflarla paylaşmaz. Kaynak kodları bu repoda %100 şeffaf bir şekilde paylaşılmıştır.
+
+---
+
+> **"Basitlik karmaşıklığın en üst noktasıdır."**  
+> Geliştirilen: [sc0x01.com](https://sc0x01.com)
