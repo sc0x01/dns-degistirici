@@ -75,11 +75,10 @@ export const AboutModal = ({ isOpen, onClose }: AboutModalProps) => {
                             Website
                         </button>
 
-                        {/* Github Button (Disabled/Empty per request) */}
+                        {/* Github Button */}
                         <button
-                            disabled
-                            className="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 bg-gray-100 text-muted/50 rounded-lg text-xs font-medium cursor-not-allowed border border-transparent"
-                            title="Coming Soon"
+                            onClick={() => handleLink('https://github.com/sc0x01/dns-degistirici')}
+                            className="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 bg-gray-100 text-text rounded-lg text-xs font-medium hover:bg-gray-200 transition-all hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 border border-transparent"
                         >
                             <Github size={14} />
                             Github
