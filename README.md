@@ -1,8 +1,8 @@
 # 🛡️ DNS Degistirici v1.0
 
 [![Version](https://img.shields.io/badge/version-v1.0.0-orange)](https://github.com/sc0x01/dns-degistirici/releases/tag/v1.0.0)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F72-brightgreen)](https://www.virustotal.com/)
-[![Download](https://img.shields.io/badge/İndir-DNS.Degistirici.exe-white)](https://github.com/sc0x01/dns-degistirici/releases/latest/download/DNS.Degistirici.exe)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F72-brightgreen)](https://www.virustotal.com/gui/file/4dc1944646856497545499f996897c732577d31a8c0d166d66a8909f58885e76?nocache=1)
+[![Download](https://img.shields.io/badge/İndir-DNS.Degistirici.exe-white)](https://github.com/sc0x01/dns-degistirici/releases/download/v1.0.0/DNS.Degistirici.exe)
 
 **[sc0x01.com](https://sc0x01.com)** tasarım felsefesiyle geliştirilmiş, minimalist, hızlı ve güvenli DNS değiştirme aracı. Gereksiz hiçbir detay içermez, sadece en hızlı ve güvenli internet deneyimini sunar.
 
